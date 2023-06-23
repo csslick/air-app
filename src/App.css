@@ -1,0 +1,17 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.navbar {
+  background: #000;
+  color: #fff;
+  padding: 20px;
+}
+
+.navbar a{
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 1rem;
+}
