@@ -47,7 +47,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid #ddd;
+  /* border-top: 1px solid #ddd; */
 }
 
 .item-list > li > a {
