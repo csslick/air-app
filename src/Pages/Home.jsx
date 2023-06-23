@@ -9,16 +9,18 @@ function Home({data}) {
     <div className="home">
         <h1>home</h1>
         <h2>Total: { data && totalCount }</h2>
-        {
-          data && data.response.body.items.map((item, i)=>{
-            return (
-              <p key={i}>
-                {item.districtName + item.moveName}
-                <a href={`detail/${i}`}>자세히 보기</a>
-              </p>
-            )
-          })
-        }
+        <ul className='item-list'>
+          {
+            data && data.response.body.items.map((item, i)=>{
+              return (
+                <li key={i}>
+                  <h4>{item.districtName + ' ' + item.moveName}</h4>
+                  <a className='btn' href={`detail/${i}`}>자세히 보기</a>
+                </li>
+              )
+            })
+          }
+        </ul>
    
     </div>
   )

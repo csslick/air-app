@@ -6,7 +6,7 @@ function Detail({data}) {
   const item = data?.response?.body?.items[params.id];
   console.log(params);
   console.log('item =', item)
-  const title = item?.districtName + item?.moveName;
+  const title = item?.districtName + ' ' + item?.moveName;
   // 시리얼번호
   const sn = item?.sn;
   // 주의보 개시
