@@ -4,6 +4,15 @@
   text-align: center;
 }
 
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
 .navbar {
   background: #000;
   color: #fff;
@@ -14,4 +23,17 @@
   color: #fff;
   text-decoration: none;
   padding: 5px 1rem;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin {
+  animation: spin 1s linear infinite;
 }
