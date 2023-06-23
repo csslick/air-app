@@ -16,7 +16,7 @@ function Home({data}) {
               return (
                 <li key={i}>
                   <h4>{item.districtName + ' ' + item.moveName}</h4>
-                  <Link className='btn' href={`detail/${i}`}>자세히 보기</Link>
+                  <Link className='btn' to={`detail/${i}`}>자세히 보기</Link>
                 </li>
               )
             })
